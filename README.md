@@ -44,7 +44,7 @@ Para el funcionamiento de la librería, se importa la librería de numpy, que se
 Las imagenes resultantes son las siguientes:
 
 
-"python3 main.py image.jpg/png"
+python3 main.py image.jpg/png
 
 
 ## Fuentes
