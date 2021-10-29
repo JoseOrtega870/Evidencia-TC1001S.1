@@ -39,8 +39,10 @@ Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que 
 El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
 Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>
 
-## Resultados 
+## Instrucciones 
+Para usar el programa se debe de abrir una consolas e ir al directorio donde se encuentran los archivos "main.py" y "LIB.py" ademas de que se debe de contar con la imagen a la cual se busca realizar las convoluciones en el mismo directorio. Una vez que se encuentre en el directorio dentro de la consola se debe de escribir el siguiente comando "python3 main.py image.jpg/png".
 
+## Resultados 
 Las images resultantes de la convolucion se puede observar a continuacion, fueron usadas las images "Sample.png" y "sudoku.png" que se encuentran en este mismo repositorio.
 Las imagenes resultantes son las siguientes:
 ![Figure_1](https://user-images.githubusercontent.com/61805820/139489869-df7679de-3999-4348-b9da-be7030d9a479.png)
