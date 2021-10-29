@@ -44,7 +44,7 @@ Para el funcionamiento de la librería, se importa la librería de numpy, que se
 Las imagenes resultantes son las siguientes:
 
 
-python3 main.py image.jpg/png
+![Imagen de sudoku procesada](/main.py/sudoku_processed.png)
 
 
 ## Fuentes
