@@ -4,10 +4,10 @@ Este repositorio esta hecho para la Semana Tec "Herramientas Computacionales: el
 Con el fin de crear  un programa  en Python que procese imagenes, usando kernels, por medio de una convolución, y final mente un Padding.
 
 # EQUIPO
-Rodolfo de la O A01366363   </br>
-Jose Ortega Guido A01770426 </br>
-Fabian Vera       A01367585 </br>
-Grettel Morales   A01769234 </br>
+Rodolfo de la O        A01366363   </br>
+Jose Ortega Guido      A01770426 </br>
+Fabian Gonzalez Vera   A01367585 </br>
+Grettel Morales        A01769234 </br>
 
 ## Convolucion y Padding
 La convolución es el como editamos una imagen, basicamente una imagen es una matriz, por otra matriz "kernel". </br>
@@ -39,12 +39,17 @@ Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que 
 El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
 Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>
 
+## Instrucciones 
+Para usar el programa se debe de abrir una consolas e ir al directorio donde se encuentran los archivos "main.py" y "LIB.py" ademas de que se debe de contar con la imagen a la cual se busca realizar las convoluciones en el mismo directorio. Una vez que se encuentre en el directorio dentro de la consola se debe de escribir el siguiente comando "python3 main.py image.jpg/png".
+
 ## Resultados 
-
+Las images resultantes de la convolucion se puede observar a continuacion, fueron usadas las images "Sample.png" y "sudoku.png" que se encuentran en este mismo repositorio.
 Las imagenes resultantes son las siguientes:
+![Figure_1](https://user-images.githubusercontent.com/61805820/139489869-df7679de-3999-4348-b9da-be7030d9a479.png)
 
 
-![Imagen de sudoku procesada](/main.py/sudoku_processed.png)
+![Figure_2](https://user-images.githubusercontent.com/61805820/139489911-f7401e0b-cd2b-4ff2-98bf-134300dbda4f.png)
+
 
 
 ## Fuentes
