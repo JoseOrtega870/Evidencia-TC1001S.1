@@ -9,6 +9,11 @@ Jose Ortega Guido A01770426 </br>
 Fabian Vera       A01367585 </br>
 Grettel Morales   A01769234 </br>
 
+## Convolucion y Padding
+La convolución es el como editamos una imagen, basicamente una imagen es una matriz, por otra matriz "kernel". </br>
+
+El padding es para no perder informacion de la imagen, el paddinig es como un "marco" o una orilla que le ponemos a la imagen para que se vea de la mejor manera.
+
 
 ## Verbose
 
