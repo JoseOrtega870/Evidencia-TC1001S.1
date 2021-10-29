@@ -10,5 +10,5 @@ print(args.echo)
 
 imagen = args.echo
 k0 = lb.gauss_blur(k=7,sigma=1)
-con = lb.convolucion(imagen,k0)
-k1 = lb.laplacianOfGaussian(k=8,sigma=5)
+con = lb.convolucion(imagen,k0,k1)
+k1 = lb.laplacianOfGaussian(sigma=5,K=8)

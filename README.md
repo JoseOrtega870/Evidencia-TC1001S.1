@@ -1,8 +1,22 @@
-"# Evidencia-TC1001S.1" 
+# Evidencia-TC1001S.1 
 
 # EQUIPO
-Rodolfo de la O A01366363
-Jose Ortega Guido A01770426
-Fabian Vera       A01367585
-Grettel Morales   A01769234
-# 
+Rodolfo de la O A01366363   </br>
+Jose Ortega Guido A01770426 </br>
+Fabian Vera       A01367585 </br>
+Grettel Morales   A01769234 </br>
+
+## Kernels 
+
+### Laplace
+Se implementaron dos funciones para crear un kernel de Laplace. Ambos kernel se usan para crear una imagen con bordes pronunciados. Debido a que es estado base, es muy sensible al ruido.
+
+### Sobel
+Sirve para detectar líneas y bordes en la imagen,funciona de forma similar a los kernels de detección de bordes, pero con una optimización de suavización, que permite que no se vean tan afectados por el ruido.
+
+### Gauss Blur
+Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que permite crear una imagen con ruido y detalle reducido
+
+## LIB.py
+El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
+Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>

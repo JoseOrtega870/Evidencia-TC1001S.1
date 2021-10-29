@@ -34,16 +34,16 @@ def convolucion(imagen, kernel, k1): #Convolucion de imagen
 	j1 = ndimage.convolve(I, k1, mode='constant', cval=0.0)
         
         plt.figure(figsize=(15,15)) #Graficas
-        plt.subplot(2,2,1)
+        plt.subplot(3,3,1)
         plt.imshow(Is)
         plt.xlabel('Input Image')
 
-        plt.subplot(2,2,2)
+        plt.subplot(3,3,2)
         plt.imshow(j0)
         plt.xlabel('Gaussian Blur')
 	
-	plt.subplot(2,2,2)
-        plt.imshow(k1)
+	plt.subplot(3,3,3)
+        plt.imshow(j1)
         plt.xlabel('laplacian Of Gaussian')
         
         plt.grid(False)

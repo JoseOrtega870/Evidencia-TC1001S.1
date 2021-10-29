@@ -1,3 +1,5 @@
+#FAVOR DE OMITIR, SOLO ES UNA PRUEBA
+
 import matplotlib.pyplot as plt
 import numpy
 from PIL import Image
