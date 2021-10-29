@@ -11,7 +11,15 @@ def gauss_blur(k, sigma): #Kernel Gaussian Blur
 			G[x][y] = (1 / (2 * numpy.pi * sigma**2)) * numpy.exp( - ((x**2 + y**2)/(2 * sigma**2)))
 	return G
 
-def convolucion(imagen, kernel): #Convolucion de imagen
+def laplacianOfGaussian(sigma, K):
+    M = numpy.zeros((K,K))
+    for x in range(0,K):
+        for y in range(0,K):
+            M[x][y] = -(1/(numpy.pi*sigma**4)) * (1-((x**2+y**2)/(2*sigma**2))) \
+                        * numpy.exp(-(x**2+y**2)/(2*sigma**2))
+    return M
+
+def convolucion(imagen, kernel, k1): #Convolucion de imagen
         Is = Image.open(imagen)
         I = Is.convert('L')
         I = numpy.asarray(I)
@@ -23,6 +31,7 @@ def convolucion(imagen, kernel): #Convolucion de imagen
         I = numpy.pad(I, 10, pad_with, padder=1)
         
         j0 = ndimage.convolve(I, kernel, mode='constant', cval=0.0)
+	j1 = ndimage.convolve(I, k1, mode='constant', cval=0.0)
         
         plt.figure(figsize=(15,15)) #Graficas
         plt.subplot(2,2,1)
@@ -32,6 +41,10 @@ def convolucion(imagen, kernel): #Convolucion de imagen
         plt.subplot(2,2,2)
         plt.imshow(j0)
         plt.xlabel('Gaussian Blur')
+	
+	plt.subplot(2,2,2)
+        plt.imshow(k1)
+        plt.xlabel('laplacian Of Gaussian')
         
         plt.grid(False)
         plt.show()
