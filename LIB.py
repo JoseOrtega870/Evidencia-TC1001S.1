@@ -19,7 +19,7 @@ def laplacianOfGaussian(sigma, K):
                         * numpy.exp(-(x**2+y**2)/(2*sigma**2))
     return M
 
-def convolucion(imagen, kernel): #Convolucion de imagen
+def convolucion(imagen, kernel, k1): #Convolucion de imagen
         Is = Image.open(imagen)
         I = Is.convert('L')
         I = numpy.asarray(I)
@@ -31,6 +31,7 @@ def convolucion(imagen, kernel): #Convolucion de imagen
         I = numpy.pad(I, 10, pad_with, padder=1)
         
         j0 = ndimage.convolve(I, kernel, mode='constant', cval=0.0)
+	j1 = ndimage.convolve(I, k1, mode='constant', cval=0.0)
         
         plt.figure(figsize=(15,15)) #Graficas
         plt.subplot(2,2,1)
