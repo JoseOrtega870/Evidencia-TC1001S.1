@@ -43,7 +43,7 @@ def convolucion(imagen, kernel, k1): #Convolucion de imagen
         plt.xlabel('Gaussian Blur')
 	
 	plt.subplot(3,3,3)
-        plt.imshow(k1)
+        plt.imshow(j1)
         plt.xlabel('laplacian Of Gaussian')
         
         plt.grid(False)
