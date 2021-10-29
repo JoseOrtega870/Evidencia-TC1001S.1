@@ -1,10 +1,10 @@
 # Evidencia-TC1001S.1 
 
 # EQUIPO
-Rodolfo de la O A01366363 \n
-Jose Ortega Guido A01770426
-Fabian Vera       A01367585
-Grettel Morales   A01769234
+Rodolfo de la O A01366363   </br>
+Jose Ortega Guido A01770426 </br>
+Fabian Vera       A01367585 </br>
+Grettel Morales   A01769234 </br>
 
 ## Kernels 
 
@@ -16,3 +16,7 @@ Sirve para detectar líneas y bordes en la imagen,funciona de forma similar a lo
 
 ### Gauss Blur
 Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que permite crear una imagen con ruido y detalle reducido
+
+## LIB.py
+El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
+Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>
