@@ -41,6 +41,7 @@ Para el funcionamiento de la librería, se importa la librería de numpy, que se
 
 ## Fuentes
 
+http://blog.espol.edu.ec/telg1001/transformada-laplace-python/
 
 https://en.wikipedia.org/wiki/Gaussian_blur
 
