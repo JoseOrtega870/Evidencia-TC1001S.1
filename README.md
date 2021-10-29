@@ -11,7 +11,7 @@ Grettel Morales   A01769234
 ### Laplace
 Se implementaron dos funciones para crear un kernel de Laplace. Ambos kernel se usan para crear una imagen con bordes pronunciados. Debido a que es estado base, es muy sensible al ruido.
 
-### SOBEL
+### Sobel
 Sirve para detectar líneas y bordes en la imagen,funciona de forma similar a los kernels de detección de bordes, pero con una optimización de suavización, que permite que no se vean tan afectados por el ruido.
 
 ### Gauss Blur
