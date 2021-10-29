@@ -38,3 +38,13 @@ Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que 
 ## LIB.py
 El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
 Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>
+
+## Fuentes
+
+
+https://en.wikipedia.org/wiki/Gaussian_blur
+
+http://publib.boulder.ibm.com/tividd/td/TSMC/GC32-0788-04/es_ES/HTML/ans60000357.htm#:~:text=La%20opción%20verbose%20especifica%20que,se%20hace%20copia%20de%20seguridad.&text=Si%20especifica%20quiet%20en%20el%20archivo%20dsm.
+
+https://programmerclick.com/article/6637654809/
+
