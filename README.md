@@ -1,5 +1,8 @@
 # Evidencia-TC1001S.1 
 
+Este repositorio esta hecho para la Semana Tec "Herramientas Computacionales: el arte de la programación" 
+Con el fin de crear  un programa  en Python que procese imagenes, usando kernels, por medio de una convolución, y final mente un Padding.
+
 # EQUIPO
 Rodolfo de la O A01366363   </br>
 Jose Ortega Guido A01770426 </br>
