@@ -4,10 +4,10 @@ Este repositorio esta hecho para la Semana Tec "Herramientas Computacionales: el
 Con el fin de crear  un programa  en Python que procese imagenes, usando kernels, por medio de una convolución, y final mente un Padding.
 
 # EQUIPO
-Rodolfo de la O A01366363   </br>
-Jose Ortega Guido A01770426 </br>
-Fabian Vera       A01367585 </br>
-Grettel Morales   A01769234 </br>
+Rodolfo de la O        A01366363   </br>
+Jose Ortega Guido      A01770426 </br>
+Fabian Gonzalez Vera   A01367585 </br>
+Grettel Morales        A01769234 </br>
 
 ## Convolucion y Padding
 La convolución es el como editamos una imagen, basicamente una imagen es una matriz, por otra matriz "kernel". </br>
@@ -41,10 +41,13 @@ Para el funcionamiento de la librería, se importa la librería de numpy, que se
 
 ## Resultados 
 
+Las images resultantes de la convolucion se puede observar a continuacion, fueron usadas las images "Sample.png" y "sudoku.png" que se encuentran en este mismo repositorio.
 Las imagenes resultantes son las siguientes:
+![Figure_1](https://user-images.githubusercontent.com/61805820/139489869-df7679de-3999-4348-b9da-be7030d9a479.png)
 
 
-![Imagen de sudoku procesada](/main.py/sudoku_processed.png)
+![Figure_2](https://user-images.githubusercontent.com/61805820/139489911-f7401e0b-cd2b-4ff2-98bf-134300dbda4f.png)
+
 
 
 ## Fuentes
