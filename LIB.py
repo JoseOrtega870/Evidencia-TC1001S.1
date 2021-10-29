@@ -47,10 +47,7 @@ def Sobel_Top(K):
     M[K//2 + 1][K//2 - 1] = -1
     M[K//2 - 1][K//2 + 1] = 1
     M[K//2 - 1][K//2 - 1] = 1
-
     return M
-
-
 
 def Sobel_right(K):
     M = numpy.zeros((K,K))
