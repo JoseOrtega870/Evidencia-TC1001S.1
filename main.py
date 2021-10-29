@@ -1,6 +1,5 @@
 import argparse
 
-import cv2
 
 import LIB as lb
 """
