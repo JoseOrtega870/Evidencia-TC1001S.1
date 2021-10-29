@@ -39,6 +39,14 @@ Utilizando la función para crear un kernel Gaussiano, se obtiene un kernel que 
 El archivo `LIB.py`  funciona para generar todos los kernels mencionados, recibiendo x cantidad de parametros, los cuales son enviados desde el archivo main.py  </br>
 Para el funcionamiento de la librería, se importa la librería de numpy, que se utiliza en la generación de matrices (kernels). </br>
 
+## Resultados 
+
+Las imagenes resultantes son las siguientes:
+
+
+"python3 main.py image.jpg/png"
+
+
 ## Fuentes
 
 http://blog.espol.edu.ec/telg1001/transformada-laplace-python/
