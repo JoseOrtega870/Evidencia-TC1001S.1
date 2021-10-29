@@ -6,6 +6,16 @@ Jose Ortega Guido A01770426 </br>
 Fabian Vera       A01367585 </br>
 Grettel Morales   A01769234 </br>
 
+
+## Verbose
+
+Verbose es muy importante ya que sirve para especificar que  información sera visualisada en patanlla. </br>
+
+## Main 
+
+El main funciona para juntar  las funciones de Laplace, Sobel y Gaussian Blur. Main principalmente lo que hace es importar todos los programas y ejecutar el correspondiente.
+
+
 ## Kernels 
 
 ### Laplace
