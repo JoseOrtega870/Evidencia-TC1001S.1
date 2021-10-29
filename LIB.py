@@ -5,14 +5,26 @@ from scipy import ndimage
 import convolution as con
 
 
-def gauss_blur(k, sigma): #Kernel Gaussian Blur
+"""
+Funcion Gaussian Blur por Fabian Gonzalez Vera
+Recibe tamanio del kernel y valor de sigma
+Regresa G
+"""
+
+def gauss_blur(k, sigma): 
 	G = numpy.zeros((k, k))
 	for x in range(0,k):
 		for y in range(0,k):
 			G[x][y] = (1 / (2 * numpy.pi * sigma**2)) * numpy.exp( - ((x**2 + y**2)/(2 * sigma**2)))
 	return G
 
-def laplacianOfGaussian(sigma, K):
+"""
+Funcion Laplacian of Gaussian por Jose Ortega Guido
+Recibe tamanio del kernel y valor de sigma
+Regresa M
+"""
+
+def laplacianOfGaussian(sigma, K): 
     M = numpy.zeros((K,K))
     for x in range(0,K):
         for y in range(0,K):
@@ -20,7 +32,12 @@ def laplacianOfGaussian(sigma, K):
                         * numpy.exp(-(x**2+y**2)/(2*sigma**2))
     return M
 
-def topSobel(K):
+"""
+Funciones de Sobel por Rodolfo de la O
+Recibe el tamnio del kernel y regresan M
+"""
+
+def Sobel_Top(K): 
     M = numpy.zeros((K,K))
     M[K//2][K//2] = 0
     M[K//2 + 1][K//2] = -2
@@ -33,7 +50,7 @@ def topSobel(K):
     M[K//2 - 1][K//2 - 1] = 1
     return M
 
-def rightSobel(K):
+def Sobel_right(K):
     M = numpy.zeros((K,K))
     M[K//2][K//2] = 0
     M[K//2 + 1][K//2] = 0
@@ -46,7 +63,7 @@ def rightSobel(K):
     M[K//2 - 1][K//2 - 1] = -1
     return M
 
-def leftSobel(K):
+def Sobel_left(K):
     M = numpy.zeros((K,K))
     M[K//2][K//2] = 0
     M[K//2 + 1][K//2] = 0
@@ -59,7 +76,13 @@ def leftSobel(K):
     M[K//2 - 1][K//2 - 1] = 1
     return M
 
-def convolucion(imagen, kernel, k1, k2, k3, k4): #Convolucion de imagen
+"""
+Funcion de convolucion recibe imagen y el los kernels kernel, k1, k2, k3 y k4
+La imagen es recibida por un argumento se cambia a gris y se le anade el pading
+Convoluciona la imagen con diferentes kernels y la grafica
+"""
+
+def convolucion(imagen, kernel, k1, k2, k3, k4):
         Is = Image.open(imagen)
         I = Is.convert('L')
         I = numpy.asarray(I)
@@ -76,7 +99,8 @@ def convolucion(imagen, kernel, k1, k2, k3, k4): #Convolucion de imagen
         j3 = ndimage.convolve(I, k3, mode='constant', cval=0.0)
         j4 = ndimage.convolve(I, k4, mode='constant', cval=0.0)
         
-        plt.figure(figsize=(15,15)) #Graficas
+        plt.figure(figsize=(30,30)) #Graficas
+        
         plt.subplot(3,3,1)
         plt.imshow(Is)
         plt.xlabel('Input Image')
@@ -89,18 +113,19 @@ def convolucion(imagen, kernel, k1, k2, k3, k4): #Convolucion de imagen
         plt.imshow(j1)
         plt.xlabel('laplacian Of Gaussian')
 
-        plt.subplot(3,3,4)
+        plt.subplot(3,3,7)
         plt.imshow(j2)
-        plt.xlabel('Top Sobel')
+        plt.xlabel('Sobel Top')
 
-        plt.subplot(3,3,5)
+        plt.subplot(3,3,8)
         plt.imshow(j3)
-        plt.xlabel('Right Sobel')
+        plt.xlabel('Sobel Right')
 
-        plt.subplot(3,3,6)
+        plt.subplot(3,3,9)
         plt.imshow(j4)
-        plt.xlabel('Left Sobel')
-        
+        plt.xlabel('Sobel Left')
+
+        plt.tight_layout()
         plt.grid(False)
         plt.show()
         return
